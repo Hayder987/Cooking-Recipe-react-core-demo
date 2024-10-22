@@ -1,10 +1,11 @@
 
 import './App.css'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cooking from './Cooking/Cooking'
 import Recipies from './Recipies/Recipies'
 import Header from './Components/Header/Header';
 import Banner from './Components/Banner/Banner';
+import { getStoredItem, removeItemLs, storedRecipie } from './utilities/utility';
 
 function App() {
     
@@ -12,6 +13,11 @@ function App() {
   const [cookingItem, setCookingItem] = useState([]);
   const [time, setTime] = useState(0);
   const [calories, setCalories] = useState(0);
+
+  useEffect(()=>{
+    const storedRecipie = getStoredItem()
+    setPrepareItem(storedRecipie)
+  },[])
  
   const cookBtnHandeller =(recipe)=>{
     const isDuplicate = prepareItem.find(preItem=> preItem.recipe_id === recipe.recipe_id)
@@ -20,14 +26,21 @@ function App() {
     }
     else{
       setPrepareItem([...prepareItem, recipe])
+      storedRecipie(recipe)
     }
   };
+
+  
+
+  
+  
 
  const preparingBtnHandeller =(id)=>{
    const remingItem = prepareItem.filter(item=> item.recipe_id !== id);
    setPrepareItem(remingItem);
    const newCookingItem = prepareItem.find(cookItem=> cookItem.recipe_id === id)
    setCookingItem([...cookingItem, newCookingItem]);
+   removeItemLs(id)
  }
 
 
