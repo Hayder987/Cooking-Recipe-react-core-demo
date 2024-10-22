@@ -4,6 +4,7 @@ import { useState } from "react";
 import Cooking from './Cooking/Cooking'
 import Recipies from './Recipies/Recipies'
 import Header from './Components/Header/Header';
+import Banner from './Components/Banner/Banner';
 
 function App() {
     
@@ -38,14 +39,16 @@ const calculate =(time1, calorie1)=>{
 
   return (
     <>
+     <div className=" p-4">
      <Header></Header>
-      <main className="container mx-auto ">
+     <Banner></Banner>
+      <main className="container mx-auto mb-12 ">
         <div className="p-6 mb-12">
           <h1 className="text-4xl font-bold text-center mb-6">Our Recipes</h1>
           <p className="text-center text-gray-500">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum mauris aenean neque. </p>
 
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-6 flex-col md:flex-row">
           <Recipies 
             cookBtnHandeller={cookBtnHandeller}
           ></Recipies>
@@ -59,6 +62,7 @@ const calculate =(time1, calorie1)=>{
         </div>
        
       </main>
+     </div>
     </>
   )
 }

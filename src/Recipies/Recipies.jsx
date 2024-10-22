@@ -20,8 +20,8 @@ const Recipies = ({cookBtnHandeller}) => {
 
 
     return (
-        <div className="w-2/3">
-          <div className=" grid grid-cols-2 gap-6">
+        <div className="w-full md:w-2/3">
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
 
            {allRecipies.map((recipieItem) => <Recipie 
               key={recipieItem.recipe_id} 

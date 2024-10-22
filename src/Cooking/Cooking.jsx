@@ -6,7 +6,7 @@ const Cooking = ({prepareItem, preparingBtnHandeller,cookingItem,calculate, calc
    const {time, calories} = calcData;
 
     return (
-        <div className="w-1/3">
+        <div className="w-full md:w-1/3">
           <div className="p-4 border-b-2 ">
             <h1 className="text-center text-xl font-bold">Want to cook: {prepareItem.length}</h1>  
           </div>
