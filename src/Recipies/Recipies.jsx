@@ -24,9 +24,9 @@ const Recipies = ({cookBtnHandeller}) => {
           <div className=" grid grid-cols-2 gap-6">
 
            {allRecipies.map((recipieItem) => <Recipie 
-           key={recipieItem.recipe_id} 
-           recipieItem={recipieItem}
-           cookBtnHandeller={cookBtnHandeller} 
+              key={recipieItem.recipe_id} 
+              recipieItem={recipieItem}
+              cookBtnHandeller={cookBtnHandeller} 
            ></Recipie>)}
 
           </div>

@@ -3,6 +3,7 @@ import './App.css'
 import { useState } from "react";
 import Cooking from './Cooking/Cooking'
 import Recipies from './Recipies/Recipies'
+import Header from './Components/Header/Header';
 
 function App() {
     
@@ -37,6 +38,7 @@ const calculate =(time1, calorie1)=>{
 
   return (
     <>
+     <Header></Header>
       <main className="container mx-auto ">
         <div className="p-6 mb-12">
           <h1 className="text-4xl font-bold text-center mb-6">Our Recipes</h1>
