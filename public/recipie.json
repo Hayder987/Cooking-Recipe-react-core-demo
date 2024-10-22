@@ -11,8 +11,8 @@
         "100 g broccoli",
         "50 g carrots"
       ],
-      "preparing_time": "30 min",
-      "calories": "320 calories"
+      "preparing_time": 30,
+      "calories": 320
     },
     {
       "recipe_id": 2,
@@ -26,8 +26,8 @@
         "50 g butter",
         "2 cloves garlic"
       ],
-      "preparing_time": "25 min",
-      "calories": "450 calories"
+      "preparing_time": 25,
+      "calories": 450
     },
     {
       "recipe_id": 3,
@@ -41,8 +41,8 @@
         "200 ml vegetable broth",
         "50 g onions"
       ],
-      "preparing_time": "40 min",
-      "calories": "200 calories"
+      "preparing_time": 40,
+      "calories": 200
     },
     {
       "recipe_id": 4,
@@ -56,8 +56,8 @@
         "50 g lettuce",
         "100 g cheddar cheese"
       ],
-      "preparing_time": "20 min",
-      "calories": "300 calories"
+      "preparing_time": 20,
+      "calories": 300
     },
     {
       "recipe_id": 5,
@@ -71,8 +71,8 @@
         "100 ml milk",
         "2 eggs"
       ],
-      "preparing_time": "50 min",
-      "calories": "500 calories"
+      "preparing_time": 50,
+      "calories": 500
     },
     {
       "recipe_id": 6,
@@ -86,8 +86,8 @@
         "10 g black pepper",
         "1 lemon"
       ],
-      "preparing_time": "25 min",
-      "calories": "280 calories"
+      "preparing_time": 25,
+      "calories": 280
     }
   ]
   
